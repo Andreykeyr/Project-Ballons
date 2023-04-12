@@ -1,0 +1,30 @@
+//Двигаем текст с хедера слева направо при хапуске страницы
+@keyframes leftToRight
+   0%
+      opacity: 0
+      transform: translateX(-10rem)
+   80%
+      transform: translateX(2rem)
+
+   100%
+      opacity: 1
+//Двигаем текст с хедера справа на лево при запуске страницы
+@keyframes rightToLeft
+   0%
+      opacity: 0
+      transform: translateX(10rem)
+   80%
+      transform: translateX(-1rem)
+
+   100%
+      opacity: 1
+
+//Смешное поднятие кнопочки навверх при запуске страницы
+@keyframes BtnToUp
+   0%
+      opacity: 0
+      transform: translateY(5rem)
+
+   100%
+      opacity: 1
+      transform: translateY(0)
