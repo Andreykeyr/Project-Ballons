@@ -7,11 +7,15 @@
       position: absolute
       top: 4rem
       left: 5rem
-      height: 5.6rem
-      width: 4.6rem
+      height: 7rem
+      width: 5.6rem
+      @include respond (tab-port)
+         height: 5.6rem
+         width: 4.6rem
+
    &__box
       position: absolute
-      top: 40%
+      top: 45%
       left: 50%
       transform: translate(-50%, -50%)
       width: 100%

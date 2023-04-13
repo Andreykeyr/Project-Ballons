@@ -46,8 +46,10 @@ body {
     animation-duration: 2s;
     animation-delay: 1s;
     animation-timing-function: ease;
-    animation-fill-mode: backwards;
-    font-size: 4rem; }
+    animation-fill-mode: backwards; }
+    @media (max-width: 1240px) {
+      .title-first__main {
+        font-size: 4rem; } }
     @media (max-width: 900px) {
       .title-first__main {
         font-size: 3.6rem;
@@ -562,11 +564,15 @@ body {
     position: absolute;
     top: 4rem;
     left: 5rem;
-    height: 5.6rem;
-    width: 4.6rem; }
+    height: 7rem;
+    width: 5.6rem; }
+    @media (max-width: 900px) {
+      .header__logo {
+        height: 5.6rem;
+        width: 4.6rem; } }
   .header__box {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
