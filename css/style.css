@@ -20,7 +20,8 @@ html {
 
 body {
   padding: 5rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 2.5rem; }
 
 .container {
   background-color: #F7F7F7;
@@ -272,7 +273,8 @@ body {
   @media (max-width: 900px) {
     .comment-card {
       transform: skewX(350deg);
-      padding: 3rem; } }
+      padding: 3rem;
+      width: 80%; } }
   .comment-card > * {
     transform: skewX(-330deg); }
     @media (max-width: 900px) {
@@ -439,7 +441,7 @@ body {
   @media (max-width: 900px) {
     .form {
       width: 100%;
-      padding-top: 3rem;
+      padding-top: 6rem;
       padding-left: 3rem; } }
   .form__group:not(:last-child) {
     margin-bottom: 2rem; }
@@ -742,7 +744,7 @@ body {
   display: inline-block; }
   @media (max-width: 900px) {
     .navigation__link:link, .navigation__link:visited {
-      font-size: 2.1rem; } }
+      font-size: 3rem; } }
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #000000;
