@@ -14,6 +14,8 @@
       @include respond(tab-land)
       padding: 1.5rem 3.7rem
       font-size: 1.8rem
+      @include respond(tab-port)
+      padding: 2rem 5rem
    &:hover
       transform: translateY(-4px)
       box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.3))
@@ -39,7 +41,7 @@
       animation: BtnToUp .5s ease-out .7s
       animation-fill-mode: backwards
 .btn_brown
-   &, &:link, &:visited
+   @include respond(tab-port)
       background: $color-brown-light
       letter-spacing: .2rem
       font-size: 1.6rem

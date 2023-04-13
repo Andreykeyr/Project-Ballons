@@ -2,6 +2,8 @@
    height: 50rem
    -moz-perspective: 150rem
    position: relative
+   @include respond(tab-port)
+      height: 60rem
    &__side
       height: 50rem
       transition: .7s all ease-out
@@ -13,6 +15,8 @@
       backface-visibility: hidden
       border-radius: .5rem
       overflow: hidden
+      @include respond(tab-port)
+         height: 60rem
       &_front
          background: $color-white
          box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.3))
@@ -30,6 +34,8 @@
       background-blend-mode: hard-light
       clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%)
       height: 21rem
+      @include respond(tab-port)
+      height: 30rem
       &_1
          background: $color-brown-light url(../img/card-1.jpg) center / cover no-repeat
       &_2
@@ -45,6 +51,9 @@
       position: absolute
       top: 17rem
       right: 0rem
+      @include respond(tab-port)
+         top: 25rem
+         font-size: 3.2rem
    &__desc
       ul
          list-style: none
@@ -59,6 +68,8 @@
             display: inline-block
             &:not(:last-child)
                margin-bottom: 2rem
+            @include respond(tab-port)
+               font-size: 2rem
 
    &__span
       background: linear-gradient(90deg, $color-brown-light , $color-brown-dark)
@@ -71,6 +82,8 @@
          right: 0rem
          padding-bottom: 1rem
          padding-top: .3rem
+         @include respond(tab-port)
+            top: 4.4rem
    &__backside-box
       position: absolute
       top: 50%

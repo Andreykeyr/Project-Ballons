@@ -9,6 +9,8 @@
       display: inline-block
       &:not(:last-child)
          margin-right: 2rem
+         @include respond(tab-port)
+            margin: 0 3rem 3rem 0
 
    &__link
       &:link, &:visited
