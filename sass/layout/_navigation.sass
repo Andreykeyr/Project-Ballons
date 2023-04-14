@@ -12,14 +12,7 @@
       z-index: 15
       cursor: pointer
       text-align: center
-      @include respond(tab-port)
-         height: 5rem
-         width: 5rem
-         top: 9.5rem
-      @include respond(tab-land)
-         height: 6rem
-         width: 6rem
-         top: 9.5rem
+
    &__background
       height: 6rem
       width: 6rem
@@ -27,13 +20,9 @@
       background: radial-gradient($color-brown-light, $color-brown-dark)
       position: fixed
       right: 9.6rem
-      top: 9rem
+      top: 10rem
       z-index: 10
       transition: all .7s
-      @include respond(tab-port)
-      height: 4rem
-      width: 4rem
-      top: 10rem
    &__nav
       height: 100vh
       width: 0
@@ -58,10 +47,6 @@
    &__icon
       position: relative
       margin-top: 3.6rem
-      @include respond(tab-port)
-         margin-top: 3rem
-      @include respond(tab-land)
-         margin-top: 3rem
       &,
       &::before,
       &::after
@@ -69,10 +54,6 @@
          height: .2rem
          background: $color-black
          display: inline-block
-         @include respond(tab-port)
-            width: 2.5rem
-         @include respond(tab-land)
-            width: 3rem
       &::before,
       &::after
          transition: all .3s
@@ -97,7 +78,7 @@
          transition: all .4s
          display: inline-block
          @include respond(tab-port)
-            font-size: 3rem
+            font-size: 4rem
 
       &:hover, &:active
          background-position: 100%
